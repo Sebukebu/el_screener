@@ -21,7 +21,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python script
-        run: python __main__.py
+        run: python scripts/update.py
         env:
           # Add your secrets here, e.g.:
           DB_USER: ${{ secrets.DB_USER }}
